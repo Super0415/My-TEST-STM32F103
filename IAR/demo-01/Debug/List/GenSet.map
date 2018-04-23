@@ -1,0 +1,472 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.2.15995/W32 for ARM                13/Apr/2018  17:20:50
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Exe\GenSet.out
+#    Map file     =  E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\List\GenSet.map
+#    Command line =  
+#        -f C:\Users\ADMINI~1\AppData\Local\Temp\EWB307.tmp
+#        (E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\arm_bitreversal.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\arm_bitreversal2.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\arm_cfft_f32.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\arm_cfft_radix8_f32.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\arm_common_tables.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\ASMCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\CAN1Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\CAN2Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\CCPCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\CTLCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\DBCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\FFTCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\FWCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\LCDCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\main.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\misc.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\OSCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\RTCCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SAEJ1939.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SCI1Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SCI2Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SCI3Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SCI4Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SCI5Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SFCortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SPI1Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SPI2Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\SPI3Cortex.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\startup_stm32f10x_hd.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_adc.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_bkp.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_can.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_cec.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_crc.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_dac.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_dbgmcu.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_dma.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_exti.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_flash.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_fsmc.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_gpio.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_i2c.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_it.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_iwdg.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_pwr.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_rcc.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_rtc.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_sdio.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_spi.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_tim.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_usart.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_wwdg.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\system_stm32f10x.o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\XIOCortex.o -o
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Exe\GenSet.out --map
+#        E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\List\GenSet.map --config
+#        D:\IAR8.22\arm\config\linker\ST\stm32f103xE.icf --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** MESSAGES
+***
+
+Error[Li006]: duplicate definitions for "main"; in
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\FWCortex.o", and
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\main.o"
+Error[Li006]: duplicate definitions for "PendSV_Handler"; in
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\ASMCortex.o", and
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_it.o"
+Error[Li006]: duplicate definitions for "SVC_Handler"; in
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\FWCortex.o", and
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_it.o"
+Error[Li006]: duplicate definitions for "SysTick_Handler"; in
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\FWCortex.o", and
+          "E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj\stm32f10x_it.o"
+
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0807ffff] { ro };
+define block CSTACK with size = 4K, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x2000ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                      0x130
+  .intvec            ro code  0x08000000   0x130  startup_stm32f10x_hd.o [1]
+                            - 0x08000130   0x130
+
+"P1":                                     0x1280
+  .text              ro code  0x08000130   0x3ec  FWCortex.o [1]
+  .text              ro code  0x0800051c   0x218  OSCortex.o [1]
+  .text              ro code  0x08000734   0x168  XIOCortex.o [1]
+  .text              ro code  0x0800089c   0x280  SCI3Cortex.o [1]
+  .text              ro code  0x08000b1c   0x11c  SCI2Cortex.o [1]
+  .text              ro code  0x08000c38    0x30  SCI4Cortex.o [1]
+  .text              ro code  0x08000c68   0x19c  CAN1Cortex.o [1]
+  CODE               ro code  0x08000e04    0x94  ASMCortex.o [1]
+  .text              ro code  0x08000e98    0xf8  SFCortex.o [1]
+  .text              ro code  0x08000f90   0x158  system_stm32f10x.o [1]
+  .rodata            const    0x080010e8   0x100  OSCortex.o [1]
+  .text              ro code  0x080011e8    0x6a  arm_bitreversal2.o [1]
+  .text              ro code  0x08001252    0x40  zero_init3.o [5]
+  .text              ro code  0x08001292    0x2c  copy_init3.o [5]
+  .text              ro code  0x080012c0    0x28  data_init.o [5]
+  .iar.init_table    const    0x080012e8    0x24  - Linker created -
+  .text              ro code  0x0800130c    0x1e  cmain.o [5]
+  .text              ro code  0x0800132a     0x4  low_level_init.o [3]
+  .text              ro code  0x0800132e     0x4  exit.o [3]
+  .text              ro code  0x08001334     0xa  cexit.o [5]
+  .text              ro code  0x08001340    0x14  exit.o [6]
+  .text              ro code  0x08001354    0x10  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08001364     0xc  stm32f10x_it.o [1]
+  .text              ro code  0x08001370     0xc  cstartup_M.o [5]
+  .text              ro code  0x0800137c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08001380     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08001384     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08001388     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0800138c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08001390     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08001394     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08001398     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0800139c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x080013a0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x080013a4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x080013a8     0x4  startup_stm32f10x_hd.o [1]
+  Initializer bytes  const    0x080013ac     0x4  <for P2-1> (used: 0x0)
+  .rodata            const    0x080013b0     0x0  zero_init3.o [5]
+  .rodata            const    0x080013b0     0x0  copy_init3.o [5]
+                            - 0x080013b0  0x1280
+
+"P2", part 1 of 3:                           0x4
+  P2-1                        0x20000000     0x4  <Init block>
+    .data            inited   0x20000000     0x4  FWCortex.o [1]
+                            - 0x20000004     0x4
+
+"P2", part 2 of 3:                        0x1454
+  .bss               zero     0x20000004   0x800  XIOCortex.o [1]
+  .bss               zero     0x20000804   0x800  XIOCortex.o [1]
+  .bss               zero     0x20001004   0x140  OSCortex.o [1]
+  .bss               zero     0x20001144   0x104  SCI3Cortex.o [1]
+  .bss               zero     0x20001248    0xe0  CAN1Cortex.o [1]
+  .bss               zero     0x20001328    0x40  OSCortex.o [1]
+  .bss               zero     0x20001368    0x30  SCI2Cortex.o [1]
+  .bss               zero     0x20001398    0x2c  XIOCortex.o [1]
+  .bss               zero     0x200013c4    0x2c  XIOCortex.o [1]
+  .bss               zero     0x200013f0    0x14  XIOCortex.o [1]
+  .bss               zero     0x20001404    0x14  XIOCortex.o [1]
+  .bss               zero     0x20001418     0xc  CAN1Cortex.o [1]
+  .bss               zero     0x20001424     0x4  CAN1Cortex.o [1]
+  .bss               zero     0x20001428     0x4  FWCortex.o [1]
+  .bss               zero     0x2000142c     0x4  OSCortex.o [1]
+  .bss               zero     0x20001430     0x4  OSCortex.o [1]
+  .bss               zero     0x20001434     0x4  OSCortex.o [1]
+  .bss               zero     0x20001438     0x4  SCI3Cortex.o [1]
+  .bss               zero     0x2000143c     0x4  XIOCortex.o [1]
+  .bss               zero     0x20001440     0x2  FWCortex.o [1]
+  .bss               zero     0x20001442     0x2  FWCortex.o [1]
+  .bss               zero     0x20001444     0x2  OSCortex.o [1]
+  .bss               zero     0x20001446     0x2  SCI3Cortex.o [1]
+  .bss               zero     0x20001448     0x2  SCI3Cortex.o [1]
+  .bss               zero     0x2000144a     0x2  SCI3Cortex.o [1]
+  .bss               zero     0x2000144c     0x2  SCI3Cortex.o [1]
+  .bss               zero     0x2000144e     0x2  SCI3Cortex.o [1]
+  .bss               zero     0x20001450     0x1  OSCortex.o [1]
+  .bss               zero     0x20001451     0x1  OSCortex.o [1]
+  .bss               zero     0x20001452     0x1  OSCortex.o [1]
+  .bss               zero     0x20001453     0x1  OSCortex.o [1]
+  .bss               zero     0x20001454     0x1  SCI3Cortex.o [1]
+  .bss               zero     0x20001455     0x1  SCI3Cortex.o [1]
+                            - 0x20001456  0x1452
+
+"P2", part 3 of 3:                        0x1000
+  CSTACK                      0x20001458  0x1000  <Block>
+    CSTACK           uninit   0x20001458  0x1000  <Block tail>
+                            - 0x20002458  0x1000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1452:
+          0x20000004  0x1452
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x4:
+          0x080013ac     0x4
+    1 destination range, total size 0x4:
+          0x20000000     0x4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj: [1]
+    ASMCortex.o                 148
+    CAN1Cortex.o                412               240
+    FWCortex.o                1 004        4       12
+    OSCortex.o                  536      256      402
+    SCI2Cortex.o                284                48
+    SCI3Cortex.o                640               276
+    SCI4Cortex.o                 48
+    SFCortex.o                  248
+    XIOCortex.o                 360             4 228
+    arm_bitreversal2.o          106
+    startup_stm32f10x_hd.o      368
+    stm32f10x_it.o               12
+    system_stm32f10x.o          344
+    -------------------------------------------------
+    Total:                    4 510      260    5 206
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+m7M_tl.a: [4]
+    -------------------------------------------------
+    Total:
+
+rt7M_tl.a: [5]
+    cexit.o                      10
+    cmain.o                      30
+    copy_init3.o                 44
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 64
+    -------------------------------------------------
+    Total:                      200
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          6
+    Linker created                        36    4 096
+-----------------------------------------------------
+    Grand Total:              4 744      296    9 302
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x080012e8          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0800130c          --   Gb  - Linker created -
+?main                   0x0800130d         Code  Gb  cmain.o [5]
+ADC1_2_IRQHandler       0x08000205    0xe  Code  Gb  FWCortex.o [1]
+BusFault_Handler        0x0800136b    0x2  Code  Gb  stm32f10x_it.o [1]
+CAN1PutRxMsgToBuf       0x08000da7   0x3c  Code  Gb  CAN1Cortex.o [1]
+CAN1Rx1IntHook          0x08000c69   0xdc  Code  Gb  CAN1Cortex.o [1]
+CAN1SceIntHook          0x08000d45   0x62  Code  Gb  CAN1Cortex.o [1]
+CAN1_RX1_IRQHandler     0x08000309   0x10  Code  Gb  FWCortex.o [1]
+CAN1_SCE_IRQHandler     0x08000319   0x10  Code  Gb  FWCortex.o [1]
+CSTACK$$Base            0x20001458          --   Gb  - Linker created -
+CSTACK$$Limit           0x20002458          --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                        0x08000275   0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel2_IRQHandler
+                        0x08000285   0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel3_IRQHandler
+                        0x08000295   0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel4_IRQHandler
+                        0x080002a5    0xc  Code  Gb  FWCortex.o [1]
+DMA1_Channel5_IRQHandler
+                        0x080002b1    0xc  Code  Gb  FWCortex.o [1]
+DMA1_Channel6_IRQHandler
+                        0x080002bd   0x10  Code  Gb  FWCortex.o [1]
+DMA1_Channel7_IRQHandler
+                        0x080002cd   0x10  Code  Gb  FWCortex.o [1]
+DMA2_Channel1_IRQHandler
+                        0x080002dd    0xe  Code  Gb  FWCortex.o [1]
+DMA2_Channel2_IRQHandler
+                        0x080002eb    0xe  Code  Gb  FWCortex.o [1]
+DMA2_Channel3_IRQHandler
+                        0x080002f9   0x10  Code  Gb  FWCortex.o [1]
+DebugMon_Handler        0x0800136f    0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI0_IRQHandler        0x08000213    0xe  Code  Gb  FWCortex.o [1]
+EXTI15_10_IRQHandler    0x08000267    0xe  Code  Gb  FWCortex.o [1]
+EXTI1_IRQHandler        0x08000221    0xe  Code  Gb  FWCortex.o [1]
+EXTI2_IRQHandler        0x0800022f    0xe  Code  Gb  FWCortex.o [1]
+EXTI3_IRQHandler        0x0800023d    0xe  Code  Gb  FWCortex.o [1]
+EXTI4_IRQHandler        0x0800024b    0xe  Code  Gb  FWCortex.o [1]
+EXTI9_5_IRQHandler      0x08000259    0xe  Code  Gb  FWCortex.o [1]
+FLASH_IRQHandler        0x080001e1   0x12  Code  Gb  FWCortex.o [1]
+FWTimerHook             0x08000135   0x3e  Code  Gb  FWCortex.o [1]
+FWTimerHook::uiCount    0x20000000    0x4  Data  Lc  FWCortex.o [1]
+HardFault_Handler       0x08001367    0x2  Code  Gb  stm32f10x_it.o [1]
+I2C1_ER_IRQHandler      0x0800046d    0xe  Code  Gb  FWCortex.o [1]
+I2C1_EV_IRQHandler      0x0800045f    0xe  Code  Gb  FWCortex.o [1]
+I2C2_ER_IRQHandler      0x08000489    0xe  Code  Gb  FWCortex.o [1]
+I2C2_EV_IRQHandler      0x0800047b    0xe  Code  Gb  FWCortex.o [1]
+MemManage_Handler       0x08001369    0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler             0x08001365    0x2  Code  Gb  stm32f10x_it.o [1]
+OSCtxSw                 0x08000e13         Code  Gb  ASMCortex.o [1]
+OSIntCtxSw              0x08000e1b         Code  Gb  ASMCortex.o [1]
+OSIntEnter              0x0800051d   0x1a  Code  Gb  OSCortex.o [1]
+OSIntExit               0x08000537   0x8e  Code  Gb  OSCortex.o [1]
+OSIntSemPost            0x08000681   0x8e  Code  Gb  OSCortex.o [1]
+OSIntTaskResume         0x08000613   0x6e  Code  Gb  OSCortex.o [1]
+OSStartHighRdy          0x08000e23         Code  Gb  ASMCortex.o [1]
+OSTimeTick              0x080005c5   0x4e  Code  Gb  OSCortex.o [1]
+OS_CPU_SR_Restore       0x08000e0d         Code  Gb  ASMCortex.o [1]
+OS_CPU_SR_Save          0x08000e05         Code  Gb  ASMCortex.o [1]
+PVD_IRQHandler          0x080001ab   0x12  Code  Gb  FWCortex.o [1]
+PendSV_Handler          0x08000e3f         Code  Gb  ASMCortex.o [1]
+RCC_IRQHandler          0x080001f3   0x12  Code  Gb  FWCortex.o [1]
+RTC_IRQHandler          0x080001cf   0x12  Code  Gb  FWCortex.o [1]
+Region$$Table$$Base     0x080012e8          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0800130c          --   Gb  - Linker created -
+SCI2Dma1Ch6IntHook      0x08000b93   0x16  Code  Gb  SCI2Cortex.o [1]
+SCI2Dma1Ch7IntHook      0x08000b7d   0x16  Code  Gb  SCI2Cortex.o [1]
+SCI2GetTxChar           0x08000bd9   0x42  Code  Gb  SCI2Cortex.o [1]
+SCI2OverTimerHook       0x08000b7b    0x2  Code  Gb  SCI2Cortex.o [1]
+SCI2PutRxChar           0x08000ba9   0x30  Code  Gb  SCI2Cortex.o [1]
+SCI2TxRxIntHook         0x08000b1d   0x5e  Code  Gb  SCI2Cortex.o [1]
+SCI3Dma1Ch2IntHook      0x08000a39   0x1e  Code  Gb  SCI3Cortex.o [1]
+SCI3Dma1Ch3IntHook      0x08000a57   0x16  Code  Gb  SCI3Cortex.o [1]
+SCI3OverTimerHook       0x08000993   0xa6  Code  Gb  SCI3Cortex.o [1]
+SCI3SetOverTimer        0x08000a6d   0x5e  Code  Gb  SCI3Cortex.o [1]
+SCI3TxRxIntHook         0x0800089d   0xf6  Code  Gb  SCI3Cortex.o [1]
+SCI4Dma2Ch3IntHook      0x08000c3d   0x24  Code  Gb  SCI4Cortex.o [1]
+SCI4OverTimerHook       0x08000c3b    0x2  Code  Gb  SCI4Cortex.o [1]
+SCI4TxRxIntHook         0x08000c39    0x2  Code  Gb  SCI4Cortex.o [1]
+SFHardFreqPutTime       0x08000e99   0x7a  Code  Gb  SFCortex.o [1]
+SFSpdPulsePutTime       0x08000f13   0x74  Code  Gb  SFCortex.o [1]
+SPI1_IRQHandler         0x080004b1    0xc  Code  Gb  FWCortex.o [1]
+SPI2_IRQHandler         0x080004bd    0xc  Code  Gb  FWCortex.o [1]
+SPI3_IRQHandler         0x080004c9    0xc  Code  Gb  FWCortex.o [1]
+SVC_Handler             0x08000173   0x12  Code  Gb  FWCortex.o [1]
+SetSysClock             0x08000fe5    0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72         0x08000fed   0xe0  Code  Lc  system_stm32f10x.o [1]
+SysTick_Handler         0x08000185   0x14  Code  Gb  FWCortex.o [1]
+SystemInit              0x08000f91   0x54  Code  Gb  system_stm32f10x.o [1]
+TAMPER_IRQHandler       0x080001bd   0x12  Code  Gb  FWCortex.o [1]
+TIM1_BRK_IRQHandler     0x08000329    0xe  Code  Gb  FWCortex.o [1]
+TIM1_CC_IRQHandler      0x08000353    0xe  Code  Gb  FWCortex.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x08000345    0xe  Code  Gb  FWCortex.o [1]
+TIM1_UP_IRQHandler      0x08000337    0xe  Code  Gb  FWCortex.o [1]
+TIM2_IRQHandler         0x08000361   0xb6  Code  Gb  FWCortex.o [1]
+TIM3_IRQHandler         0x08000417   0x10  Code  Gb  FWCortex.o [1]
+TIM4_IRQHandler         0x08000427    0xe  Code  Gb  FWCortex.o [1]
+TIM5_IRQHandler         0x08000435    0xe  Code  Gb  FWCortex.o [1]
+TIM6_IRQHandler         0x08000443    0xe  Code  Gb  FWCortex.o [1]
+TIM7_IRQHandler         0x08000451    0xe  Code  Gb  FWCortex.o [1]
+UART4_IRQHandler        0x08000501   0x10  Code  Gb  FWCortex.o [1]
+UART5_IRQHandler        0x08000511    0xc  Code  Gb  FWCortex.o [1]
+USART1_IRQHandler       0x080004d5    0xc  Code  Gb  FWCortex.o [1]
+USART2_IRQHandler       0x080004e1   0x10  Code  Gb  FWCortex.o [1]
+USART3_IRQHandler       0x080004f1   0x10  Code  Gb  FWCortex.o [1]
+UsageFault_Handler      0x0800136d    0x2  Code  Gb  stm32f10x_it.o [1]
+WWDG_IRQHandler         0x08000199   0x12  Code  Gb  FWCortex.o [1]
+XIODma1Ch1IntHook       0x08000735   0x76  Code  Gb  XIOCortex.o [1]
+XIOTim3IntHook          0x080007d1   0xa8  Code  Gb  XIOCortex.o [1]
+__cmain                 0x0800130d         Code  Gb  cmain.o [5]
+__exit                  0x08001341   0x14  Code  Gb  exit.o [6]
+__iar_copy_init3        0x08001293   0x2c  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x080012c1   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x08001371         Code  Gb  cstartup_M.o [5]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__iar_zero_init3        0x08001253   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800132b    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f10x_hd.o [1]
+_call_main              0x08001319         Code  Gb  cmain.o [5]
+_exit                   0x08001335         Code  Gb  cexit.o [5]
+_main                   0x08001327         Code  Gb  cmain.o [5]
+arm_bitreversal_32      0x080011e9         Code  Gb  arm_bitreversal2.o [1]
+dbOSRdyIndex            0x20001444    0x2  Data  Gb  OSCortex.o [1]
+exit                    0x0800132f    0x4  Code  Gb  exit.o [3]
+main                    0x08000131    0x4  Code  Gb  FWCortex.o [1]
+pOSTCBCur               0x20001434    0x4  Data  Gb  OSCortex.o [1]
+pOSTCBHighRdy           0x20001430    0x4  Data  Gb  OSCortex.o [1]
+pOSTCBPrioTbl           0x20001328   0x40  Data  Gb  OSCortex.o [1]
+pXIOAdcDmaBuf           0x2000143c    0x4  Data  Gb  XIOCortex.o [1]
+sCAN1IntrRxMsg          0x20001418    0xc  Data  Gb  CAN1Cortex.o [1]
+sCAN1RingBuf            0x20001248   0xe0  Data  Gb  CAN1Cortex.o [1]
+sOSTCBTbl               0x20001004  0x140  Data  Gb  OSCortex.o [1]
+sSCI2RingBuf            0x20001368   0x30  Data  Gb  SCI2Cortex.o [1]
+sSCI3ModbusMsg          0x20001144  0x104  Data  Gb  SCI3Cortex.o [1]
+sXIOHardFreq0           0x20001398   0x2c  Data  Gb  XIOCortex.o [1]
+sXIOHardFreq1           0x200013c4   0x2c  Data  Gb  XIOCortex.o [1]
+sXIOSpdPulse0           0x200013f0   0x14  Data  Gb  XIOCortex.o [1]
+sXIOSpdPulse1           0x20001404   0x14  Data  Gb  XIOCortex.o [1]
+ucOSIntNesting          0x20001451    0x1  Data  Gb  OSCortex.o [1]
+ucOSPrioCur             0x20001452    0x1  Data  Gb  OSCortex.o [1]
+ucOSPrioHighRdy         0x20001453    0x1  Data  Gb  OSCortex.o [1]
+ucOSRunning             0x20001450    0x1  Data  Gb  OSCortex.o [1]
+ucOSUnMapTbl            0x080010e8  0x100  Data  Gb  OSCortex.o [1]
+ucSCI3CtrlStep          0x20001454    0x1  Data  Gb  SCI3Cortex.o [1]
+ucSCI3RxByteCnt         0x20001455    0x1  Data  Gb  SCI3Cortex.o [1]
+uiCAN1Status            0x20001424    0x4  Data  Gb  CAN1Cortex.o [1]
+uiFWStatus              0x20001428    0x4  Data  Gb  FWCortex.o [1]
+uiOSTime                0x2000142c    0x4  Data  Gb  OSCortex.o [1]
+uiSCI3Status            0x20001438    0x4  Data  Gb  SCI3Cortex.o [1]
+usFW100msTimer          0x20001442    0x2  Data  Gb  FWCortex.o [1]
+usFW5msTimer            0x20001440    0x2  Data  Gb  FWCortex.o [1]
+usSCI3OverTime1P5       0x20001446    0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime2P0       0x20001448    0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime2P5       0x2000144a    0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime4P0       0x2000144c    0x2  Data  Gb  SCI3Cortex.o [1]
+usSCI3OverTime4P5       0x2000144e    0x2  Data  Gb  SCI3Cortex.o [1]
+usXIOAdcDmaBuf0         0x20000004  0x800  Data  Gb  XIOCortex.o [1]
+usXIOAdcDmaBuf1         0x20000804  0x800  Data  Gb  XIOCortex.o [1]
+
+
+[1] = E:\³ÌÐò¿â\IAR-stm32f103\demo-01\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  4 744 bytes of readonly  code memory
+    296 bytes of readonly  data memory
+  9 302 bytes of readwrite data memory
+
+Errors: 4
+Warnings: none
