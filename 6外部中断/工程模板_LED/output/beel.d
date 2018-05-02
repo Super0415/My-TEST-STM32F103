@@ -1,0 +1,13 @@
+.\output\beel.o: Mylib\beel.c
+.\output\beel.o: Mylib\beel.h
+.\output\beel.o: .\CMSIS\stm32f10x.h
+.\output\beel.o: .\CMSIS\core_cm3.h
+.\output\beel.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\beel.o: .\CMSIS\system_stm32f10x.h
+.\output\beel.o: .\USER\stm32f10x_conf.h
+.\output\beel.o: .\FWlib\inc\stm32f10x_exti.h
+.\output\beel.o: .\CMSIS\stm32f10x.h
+.\output\beel.o: .\FWlib\inc\stm32f10x_gpio.h
+.\output\beel.o: .\FWlib\inc\stm32f10x_rcc.h
+.\output\beel.o: .\FWlib\inc\misc.h
+.\output\beel.o: .\USER\public.h

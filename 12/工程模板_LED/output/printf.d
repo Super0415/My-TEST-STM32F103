@@ -1,0 +1,15 @@
+.\output\printf.o: Mylib\Printf.c
+.\output\printf.o: Mylib\Printf.h
+.\output\printf.o: .\CMSIS\stm32f10x.h
+.\output\printf.o: .\CMSIS\core_cm3.h
+.\output\printf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\printf.o: .\CMSIS\system_stm32f10x.h
+.\output\printf.o: .\USER\stm32f10x_conf.h
+.\output\printf.o: .\FWlib\inc\stm32f10x_exti.h
+.\output\printf.o: .\CMSIS\stm32f10x.h
+.\output\printf.o: .\FWlib\inc\stm32f10x_gpio.h
+.\output\printf.o: .\FWlib\inc\stm32f10x_rcc.h
+.\output\printf.o: .\FWlib\inc\stm32f10x_tim.h
+.\output\printf.o: .\FWlib\inc\stm32f10x_usart.h
+.\output\printf.o: .\FWlib\inc\misc.h
+.\output\printf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

@@ -1,0 +1,14 @@
+.\output\usart485.o: Mylib\USART485.c
+.\output\usart485.o: Mylib\USART485.h
+.\output\usart485.o: .\CMSIS\stm32f10x.h
+.\output\usart485.o: .\CMSIS\core_cm3.h
+.\output\usart485.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\usart485.o: .\CMSIS\system_stm32f10x.h
+.\output\usart485.o: .\USER\stm32f10x_conf.h
+.\output\usart485.o: .\FWlib\inc\stm32f10x_exti.h
+.\output\usart485.o: .\CMSIS\stm32f10x.h
+.\output\usart485.o: .\FWlib\inc\stm32f10x_gpio.h
+.\output\usart485.o: .\FWlib\inc\stm32f10x_rcc.h
+.\output\usart485.o: .\FWlib\inc\stm32f10x_tim.h
+.\output\usart485.o: .\FWlib\inc\stm32f10x_usart.h
+.\output\usart485.o: .\FWlib\inc\misc.h
