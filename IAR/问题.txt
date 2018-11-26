@@ -1,0 +1,107 @@
+$PROJ_DIR$
+
+1.
+Warning[25]: Label'Reset_Handler' is defined pubweak in a section implicitly declared root
+在定位报警位置后
+将SECTION.text:CODE:REORDER(1)改为SECTION .text:CODE:REORDER:NOROOT(1)即可
+  SECTION.text:CODE:REORDER(2)改为SECTION .text:CODE:REORDER:NOROOT(2)
+
+
+2.
+Error[Pe147]: declaration is incompatible with "__nounwind __interwork __softfp unsigned int __iar_builtin_REV16(unsigned int)" (declared at line 197 of "D:\IAR8.22\ C:\Users\Administrator\Desktop\SoftGenSET\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h 1124 
+
+删除core_cm3.h，或改为core_cm3.h.old，在勾选CMSIS
+
+3.Warning[Pe223]: function "assert_param" declared implicitly
+在报警处的文件中添加
+#include "stm32f10x_conf.h"
+
+或
+
+#if !defined  USE_STDPERIPH_DRIVER
+/**
+ * @brief Comment the line below if you will not use the peripherals drivers.
+   In this case, these drivers will not be included and the application code will 
+   be based on direct access to peripherals registers 
+   */
+  #define USE_STDPERIPH_DRIVER      <<<<<<<<<去除注释
+#endif
+
+
+
+4.Warning in inline assembly: "Unpredictable register combination" 
+
+原因是点2，需要同时删除core_cm3.c，或不要包含此文件。
+
+
+5.
+Fatal Error[Pe035]: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)" C:\Users\Administrator\Desktop\TEST\User\inc\stm32f10x.h 96 
+
+
+STM32F10X_HD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
