@@ -173,7 +173,7 @@ void SCI1TaskLoop(void)
 			  {
 			      ucTmp = SFProcessRxModMsg(&sUSART1ModbusMsg);
 			  }
-			  else if(usFW100msTimer-NowTime > 30)
+			  else if((INT16U)(usFW100msTimer-NowTime) > 30)
 				{
 				  usDBmRS485Msg0Norma0 = 0;
 				

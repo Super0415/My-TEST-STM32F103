@@ -67,7 +67,7 @@ void CAN1TaskLoop (void)
 					  usDBmCANMsg0Norma0 = 1;
 					  NowTime =  usFW100msTimer;
         }
-				if(usFW100msTimer-NowTime>15) usDBmCANMsg0Norma0 = 0;
+				if((INT16U)usFW100msTimer-NowTime>15) usDBmCANMsg0Norma0 = 0;
         /* ********************** CAN1 RX Message ********************* */
         if (SAECheckRxAllTimeOut() == SAE_FALSE)
         {   SAE_STS_CLR_BIT(SAE_STS_RX_ERR);  
