@@ -57,7 +57,7 @@ void Screen_Intro(void)
     GUI_Clear();
 
     GUI_DispStringHCenterAt("RS485 AND CAN TEST DEVICE", LCD_GET_XSIZE()/ 2,100);
-	  GUI_DispStringHCenterAt("DATA:2018-9-16           ", LCD_GET_XSIZE()/ 2,130);
+	  GUI_DispStringHCenterAt("DATA:2018-11-29           ", LCD_GET_XSIZE()/ 2,130);
 }
 
 
