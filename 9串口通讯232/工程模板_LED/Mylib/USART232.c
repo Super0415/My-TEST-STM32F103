@@ -21,7 +21,7 @@ void USART232_Init(void)
 	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IN_FLOATING;	 //浮空模式
 	GPIO_Init(GPIOA,&GPIO_InitStructure); 	   /* 初始化GPIO */
 
-	USART_InitStructure.USART_BaudRate = 9600;      //波特率设置为9600	//波特率
+	USART_InitStructure.USART_BaudRate = 115200;      //波特率设置为9600	//波特率
 	USART_InitStructure.USART_WordLength = USART_WordLength_8b;        //数据长8位
 	USART_InitStructure.USART_StopBits = USART_StopBits_1;             //1位停止位
 	USART_InitStructure.USART_Parity = USART_Parity_No;                    //奇偶失能 无校验
