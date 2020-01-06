@@ -273,14 +273,14 @@ void TIM3_IRQHandler(void)  // ±÷”3÷–∂œ»Îø⁄∫Ø ˝ // ±÷”≈‰÷√ ±“—æ≠…Ë÷√∫√1√Î/0.5√Î¥
 {
 
   TIM_ClearITPendingBit(TIM3,TIM_IT_Update);  //«Â≥˝ ±÷”÷–∂œ	
-	GPIO_WriteBit(GPIOB,GPIO_Pin_8,GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_8) == Bit_RESET ? Bit_SET : Bit_RESET);
+	GPIO_WriteBit(GPIOC,GPIO_Pin_0,GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_0) == Bit_RESET ? Bit_SET : Bit_RESET);
 TESTZCT[0]++;
 }
 void TIM8_UP_IRQHandler(void)  // ±÷”3÷–∂œ»Îø⁄∫Ø ˝ // ±÷”≈‰÷√ ±“—æ≠…Ë÷√∫√1√Î/0.5√Î¥•∑¢“ª¥Œ÷–∂œ
 {
 
   TIM_ClearITPendingBit(TIM8,TIM_IT_Update);  //«Â≥˝ ±÷”÷–∂œ	
-	GPIO_WriteBit(GPIOB,GPIO_Pin_9,GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_9) == Bit_RESET ? Bit_SET : Bit_RESET);
+	GPIO_WriteBit(GPIOC,GPIO_Pin_1,GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_1) == Bit_RESET ? Bit_SET : Bit_RESET);
 TESTZCT[1]++;
 }
 
