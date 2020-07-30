@@ -13,16 +13,16 @@
       <pCCUsed>5060061::V5.06 update 1 (build 61)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F103ZE</Device>
+          <Device>STM32F103VB</Device>
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32F1xx_DFP.1.1.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
-          <Cpu>IROM(0x08000000,0x80000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
+          <Cpu>IROM(0x08000000,0x20000) IRAM(0x20000000,0x5000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000 -FP0($$Device:STM32F103ZE$Flash\STM32F10x_512.FLM))</FlashDriverDll>
-          <DeviceId>4216</DeviceId>
-          <RegisterFile>$$Device:STM32F103ZE$Device\Include\stm32f10x.h</RegisterFile>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128 -FS08000000 -FL020000 -FP0($$Device:STM32F103VB$Flash\STM32F10x_128.FLM))</FlashDriverDll>
+          <DeviceId>4223</DeviceId>
+          <RegisterFile>$$Device:STM32F103VB$Device\Include\stm32f10x.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -32,7 +32,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32F103ZE$SVD\STM32F103xx.svd</SFDFile>
+          <SFDFile>$$Device:STM32F103VB$SVD\STM32F103xx.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -111,11 +111,11 @@
           <SimDllName>SARMCM3.DLL</SimDllName>
           <SimDllArguments></SimDllArguments>
           <SimDlgDll>DARMSTM.DLL</SimDlgDll>
-          <SimDlgDllArguments>-pSTM32F103ZE</SimDlgDllArguments>
+          <SimDlgDllArguments>-pSTM32F103VB</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
           <TargetDllArguments></TargetDllArguments>
           <TargetDlgDll>TARMSTM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pSTM32F103ZE</TargetDlgDllArguments>
+          <TargetDlgDllArguments>-pSTM32F103VB</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -150,7 +150,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>6</TargetSelection>
+          <TargetSelection>11</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -164,7 +164,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>Segger\JL2CM3.dll</Driver>
+            <Driver>STLink\ST-LINKIII-KEIL_SWO.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -284,12 +284,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x10000</Size>
+                <Size>0x5000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x80000</Size>
+                <Size>0x20000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -314,7 +314,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x80000</Size>
+                <Size>0x20000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -339,7 +339,7 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x10000</Size>
+                <Size>0x5000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -371,9 +371,9 @@
             <vShortWch>0</vShortWch>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
+              <Define>USE_STDPERIPH_DRIVER,STM32F10X_MD</Define>
               <Undefine></Undefine>
-              <IncludePath>.\CMSIS;.\FWlib\inc;.\USER;.\Mylib</IncludePath>
+              <IncludePath>.\CMSIS;.\FWlib\inc;.\USER;.\Mylib;.\USBlib\inc;.\USBlib\drive</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -426,10 +426,120 @@
               <FileType>1</FileType>
               <FilePath>.\USER\stm32f10x_it.c</FilePath>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Mylib</GroupName>
+          <Files>
             <File>
-              <FileName>public.c</FileName>
+              <FileName>led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\public.c</FilePath>
+              <FilePath>.\Mylib\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Mylib\Systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Mylib\usb.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>CMSIS</GroupName>
+          <Files>
+            <File>
+              <FileName>core_cm3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\CMSIS\core_cm3.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f10x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\CMSIS\system_stm32f10x.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>startcode</GroupName>
+          <Files>
+            <File>
+              <FileName>startup_stm32f10x_md.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\CMSIS\startup_stm32f10x_md.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>USBlib</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\src\usb_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\src\usb_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\src\usb_int.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_mem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\src\usb_mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_regs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\src\usb_regs.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_sil.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\src\usb_sil.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>USBdrive</GroupName>
+          <Files>
+            <File>
+              <FileName>hw_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\drive\hw_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_desc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\drive\usb_desc.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_endp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\drive\usb_endp.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_istr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\drive\usb_istr.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_prop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\drive\usb_prop.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USBlib\drive\usb_pwr.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -550,51 +660,6 @@
               <FileName>stm32f10x_wwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\FWlib\src\stm32f10x_wwdg.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>CMSIS</GroupName>
-          <Files>
-            <File>
-              <FileName>core_cm3.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\CMSIS\core_cm3.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f10x.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\CMSIS\system_stm32f10x.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>startcode</GroupName>
-          <Files>
-            <File>
-              <FileName>startup_stm32f10x_hd.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\CMSIS\startup_stm32f10x_hd.s</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Mylib</GroupName>
-          <Files>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Mylib\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>beel.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Mylib\beel.c</FilePath>
-            </File>
-            <File>
-              <FileName>Systick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Mylib\Systick.c</FilePath>
             </File>
           </Files>
         </Group>
